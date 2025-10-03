@@ -33,6 +33,18 @@ th {
   background: #e79ea7;
   color: #fff;
 }
+@media (max-width: 600px) {
+  #cart {
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    overflow: visible;
+  }
+  .container {
+    margin: 10rem auto 2rem auto;
+    min-height: 200vh;
+  }
+}
 @media (max-width: 700px) {
   table,
   thead,
