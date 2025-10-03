@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/checkout.css">
+  <!-- <style>
+    .header .logo a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 2rem;
+    }
+    .header nav{
+      justify-content: flex-end;
+    }
+    .checkout-container {
+      max-width: 600px;
+      margin: 8rem auto 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #0001;
+    }
+    .checkout-summary {
+      margin-bottom: 2rem;
+      overflow-x: auto;
+    }
+    .checkout-summary table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 320px;
+    }
+    .checkout-summary th, .checkout-summary td {
+      padding: 0.5rem;
+      border-bottom: 1px solid #eee;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .checkout-summary th {
+      background: #e79ea7;
+      color: #fff;
+    }
+    .checkout-form label {
+      display: block;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    .checkout-form input, .checkout-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.2rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .checkout-form button {
+      margin-top: 1.5rem;
+      width: 100%;
+      background: #e79ea7;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      padding: 0.7rem 0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .checkout-form button:hover {
+      background: #90c6b9;
+    }
+    .success-message {
+      color: green;
+      font-weight: bold;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    @media (max-width: 700px) {
+      .checkout-container {
+        margin: 10rem 0.5rem 2rem 0.5rem;
+        padding: 1rem;
+      }
+      .checkout-summary th, .checkout-summary td {
+        font-size: 1rem;
+        padding: 0.3rem;
+      }
+    }
+  </style> -->
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html" aria-label="Home">
+        <span class="material-symbols-outlined">diamond</span>
+        <h2>Fashion</h2>
+      </a>
+    </div>
+    <nav class="nav">
+      <a href="index.html" aria-label="Home"><span class="material-symbols-outlined">home</span> </a>
+      <a href="cart.html" aria-label="Cart"><span class="material-symbols-outlined">shopping_cart</span></a>
+    </nav>
+  </header>
+  <main class="checkout-container">
+    <h2>Checkout</h2>
+    <div class="checkout-summary" id="checkout-summary"></div>
+    <form class="checkout-form" id="checkout-form" autocomplete="off">
+      <label for="name">Name:
+        <input type="text" id="name" required>
+      </label>
+      <label for="email">Email:
+        <input type="email" id="email" required>
+      </label>
+      <label for="address">Address:
+        <textarea id="address" rows="3" required></textarea>
+      </label>
+      <button type="submit">Place Order</button>
+    </form>
+    <div class="success-message" id="success-message" style="display:none;"></div>
+  </main>
+      <div class="footer">
+        <div class="upper"> 
+            <div id="b">
+                <h1>
+                     <span class="material-symbols-outlined">
+                        diamond
+                    </span>Fashion
+                </h1>
+                <p>we seliver time best quality products at rhe cheepest rates.walk in style everywhere </p>
+                <div class="images">
+                    <p><i class="fa-brands fa-facebook"></i></p>
+                    <p><i class="fa-brands fa-twitter"></i></p>
+                    <p><i class="fa-brands fa-square-instagram"></i></p>
+                    <p><i class="fa-brands fa-linkedin"></i></p>
+                </div>
+            </div>
+            <div id="b">
+                <h1>Contact info</h1>
+                <div class="icons-footer">
+                    <div class="mater"><span class="material-symbols-outlined">
+                        call
+                    </span>+123-456-789</div>
+                    <div class="matter"><span class="material-symbols-outlined">
+                        call
+                    </span>+123-456-789</div>
+                    <div class="matter"> <span class="material-symbols-outlined">
+                        call
+                    </span>+123-456-789</div>
+                    <div class="matter"><span class="material-symbols-outlined">
+                        mail
+                    </span>ahmed@.com</div>
+                    <div class="matter"> 
+                        <span class="material-symbols-outlined">
+                        location_on
+                        </span>port-said
+                    </div>
+
+                </div>
+            </div>
+            <div id="b">
+                <h1>Newsletter</h1>
+                <p>get all the latest trands and never miss out on anything</p>
+                <input type="email" class="input" placeholder="Email.......">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="lower">
+            <h2>Designed and Developed by </h2><h1>AhmedAtef</h1>
+        </div>
+    </div>
+  <script src="../src/checkout.js"></script>
+</body>
+</html>

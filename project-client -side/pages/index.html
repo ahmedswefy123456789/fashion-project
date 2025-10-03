@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion-Online Shoping Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop controls play-inline class="video">
+            <source src="../videos/Pexels Videos 1943483.mp4 " type="video/mp4">
+            <source src="../videos/Pexels Videos 1943483.ogg" type="video/ogg">
+            <source src="../videos/Pexels Videos 1943483.webm" type="video/webm">
+        </video>  
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            diamond
+                        </span>
+                        <a href="#"><h2>Fashion</h2></a>
+                    </a>
+                </div>
+                <ul id="menulist"> 
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="../pages/favorites.html"><span class="material-symbols-outlined">favorite</span></a></li>
+                    <li><a href="../pages/checkout.html"><span class="material-symbols-outlined">shopping_cart_checkout</span></a></li>
+                    <li><a href="../pages/cart.html"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                </ul>
+                <div class="menu-icons">
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                </div>
+            </nav>
+        </header>
+        <div id="home">
+            <div class="left-side">
+                <div class="first">
+                    <p>style i sway to say who you are without having to speak</p>
+                </div>
+                <div class="second">
+                    <p>Get ALL latest trends clothes at an affordable rate</p>
+                </div>
+                <button>
+                        <a href="#products">
+                            shop now <span class="material-symbols-outlined">
+                            shopping_cart_checkout
+                        </a>
+                    </span>
+                </button>
+            </div>
+            <div class="right-side">
+                <img src="../assets/pexels-freestocks-291762-removebg-preview.png" alt="image">
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="mens">
+            <div class="filter-bar">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                </select>
+                <input type="text" id="search-bar" placeholder="Search products by name">
+            </div>
+            <div id="products"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="upper"> 
+            <div id="b">
+                <h1>
+                     <span class="material-symbols-outlined">
+                        diamond
+                    </span>Fashion
+                </h1>
+                <p>we seliver time best quality products at rhe cheepest rates.walk in style everywhere </p>
+                <div class="images">
+                    <p><i class="fa-brands fa-facebook"></i></p>
+                    <p><i class="fa-brands fa-twitter"></i></p>
+                    <p><i class="fa-brands fa-square-instagram"></i></p>
+                    <p><i class="fa-brands fa-linkedin"></i></p>
+                </div>
+            </div>
+            <div id="b">
+                <h1>Contact info</h1>
+                <div class="icons-footer">
+                    <div class="mater"><span class="material-symbols-outlined">
+                        call
+                    </span>+123-456-789</div>
+                    <div class="matter"><span class="material-symbols-outlined">
+                        call
+                    </span>+123-456-789</div>
+                    <div class="matter"> <span class="material-symbols-outlined">
+                        call
+                    </span>+123-456-789</div>
+                    <div class="matter"><span class="material-symbols-outlined">
+                        mail
+                    </span>ahmed@.com</div>
+                    <div class="matter"> 
+                        <span class="material-symbols-outlined">
+                        location_on
+                        </span>port-said
+                    </div>
+
+                </div>
+            </div>
+            <div id="b">
+                <h1>Newsletter</h1>
+                <p>get all the latest trands and never miss out on anything</p>
+                <input type="email" class="input" placeholder="Email.......">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="lower">
+            <h2>Designed and Developed by </h2><h1>AhmedAtef</h1>
+        </div>
+    </div>
+    <script src="../src/main.js"></script>
+    <script>
+            let menulist=document.getElementById("menulist")
+            menulist.style.maxHeight="0px";
+            function toggleMenu(){
+                if (menulist.style.maxHeight=="0px"){
+                    menulist.style.maxHeight="300px"
+                }else{
+                    menulist.style.maxHeight="0px";
+                }
+            }
+    </script>
+</body>
+</html>

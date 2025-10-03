@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Cart</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <link rel="stylesheet" href="../styles/index.css">
+        <link rel="stylesheet" href="../styles/cart.css">
+        <!-- <style>
+            #cart {
+                width: 100%;
+                overflow-x: auto;
+                margin: 2rem 0;
+            }
+            table {
+                width: 100%;
+                max-width: 800px;
+                margin: auto;
+                border-collapse: collapse;
+                background: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px #0001;
+            }
+            header{
+                width:100%;
+            }
+            header .logo{
+                display: flex;
+                align-items: center;
+                gap:10px;
+            }
+            header a{
+                padding-top: 10px;
+            }
+            th, td {
+                padding: 0.7rem 0.5rem;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            th {
+                background: #e79ea7;
+                color: #fff;
+            }
+            @media (max-width: 700px) {
+                table, thead, tbody, th, td, tr {
+                    display: block;
+                }
+                th {
+                    position: absolute;
+                    left: -9999px;
+                }
+                td {
+                    border: none;
+                    position: relative;
+                    padding-left: 50%;
+                    min-height: 40px;
+                }
+                td:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 45%;
+                    white-space: nowrap;
+                    font-weight: bold;
+                    color: #e79ea7;
+                }
+                td:nth-of-type(1):before { content: "Product"; }
+                td:nth-of-type(2):before { content: "Title"; }
+                td:nth-of-type(3):before { content: "Price"; }
+                td:nth-of-type(4):before { content: "Qty"; }
+                td:nth-of-type(5):before { content: "Subtotal"; }
+                td:nth-of-type(6):before { content: "Remove"; }
+            }
+            #checkout-btn {
+                margin: 2rem auto;
+                display: block;
+                font-size: 1.2rem;
+                padding: 0.7rem 2rem;
+                background: #e79ea7;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+            #checkout-btn:hover {
+                background: #90c6b9;
+            }
+            .container h2 {
+                margin-top: 8rem;
+                text-align: center;
+                font-size: 2.2rem;
+                color: #e79ea7;
+            }
+        </style> -->
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2>Fashion</h2>
+            <a href="index.html" aria-label="Home">
+                <span class="material-symbols-outlined">diamond</span>
+            </a>
+        </div>
+        <a href="index.html" aria-label="Home">
+            <span class="material-symbols-outlined">home</span>
+        </a>
+    </header>
+    <main class="container">
+        <h2>your cart</h2>
+        <div id="cart"></div>
+    </main>
+    <div class="footer">
+        <div class="upper"> 
+            <div id="b">
+                <h1>
+                    <span class="material-symbols-outlined">
+                        diamond
+                    </span>Fashion
+                </h1>
+                <p>we seliver time best quality products at rhe cheepest rates.walk in style everywhere </p>
+                <div class="images">
+                    <p><i class="fa-brands fa-facebook"></i></p>
+                    <p><i class="fa-brands fa-twitter"></i></p>
+                    <p><i class="fa-brands fa-square-instagram"></i></p>
+                    <p><i class="fa-brands fa-linkedin"></i></p>
+                </div>
+            </div>
+            <div id="b">
+                <h1>Contact info</h1>
+                <div class="icons-footer">
+                    <div class="mater"><span class="material-symbols-outlined">
+                        call
+                    </span>+123-456-789</div>
+                    <div class="matter"><span class="material-symbols-outlined">
+                        call
+                    </span>+123-456-789</div>
+                    <div class="matter"> <span class="material-symbols-outlined">
+                        call
+                    </span>+123-456-789</div>
+                    <div class="matter"><span class="material-symbols-outlined">
+                        mail
+                    </span>ahmed@.com</div>
+                    <div class="matter"> 
+                        <span class="material-symbols-outlined">
+                        location_on
+                        </span>port-said
+                    </div>
+
+                </div>
+            </div>
+            <div id="b">
+                <h1>Newsletter</h1>
+                <p>get all the latest trands and never miss out on anything</p>
+                <input type="email" class="input" placeholder="Email.......">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="lower">
+            <h2>Designed and Developed by </h2><h1>AhmedAtef</h1>
+        </div>
+    </div>
+    <script src="../src/cart.js"></script>
+</body>
+</html>
