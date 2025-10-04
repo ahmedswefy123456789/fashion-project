@@ -51,6 +51,7 @@ function renderProducts(products) {
         };
       }
       localStorage.setItem('cart', JSON.stringify(cart));
+      alert("add to cart");
       updateCartCount();
     };
   });
