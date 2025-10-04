@@ -33,6 +33,18 @@ th {
   background: #e79ea7;
   color: #fff;
 }
+.pagination {
+  text-align: center;
+  background: white;
+}
+.pagination p {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.pagination p a {
+  text-decoration: none;
+  color: white;
+}
 @media (max-width: 600px) {
   #cart {
     width: 100%;
