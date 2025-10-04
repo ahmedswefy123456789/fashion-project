@@ -67,7 +67,7 @@ function renderCart() {
     });
   }
 }
-// Initialize cart page
+// render cart page
 document.addEventListener('DOMContentLoaded', function() {
   renderCart();
 });

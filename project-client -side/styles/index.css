@@ -1,9 +1,3 @@
-.favorites .card {
-  width: 100% !important;
-  max-width: none !important;
-  margin-bottom: 1.5rem;
-  box-sizing: border-box;
-}
 /*------------------------------- home------------------------------------  */
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
@@ -322,6 +316,12 @@ button:hover {
   align-items: center;
   justify-content: space-between;
 }
+.favorites .card {
+  width: 100% !important;
+  max-width: none !important;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
 .pagination {
   text-align: center;
   background: white;
@@ -334,7 +334,7 @@ button:hover {
   text-decoration: none;
   color: white;
 }
-/*---------------------footer------------------------------------------------*/
+/*------------------------------------footer------------------------------------------------*/
 .footer {
   width: 100%;
   background: black;
